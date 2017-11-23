@@ -1,6 +1,6 @@
 <template>
     <div id="create-cavalete">
-        <h1>Create Cavalete</h1>
+        <h1>Registrar Cavalete</h1>
 
         <p><router-link :to="{ name: 'all_cavaletes' }">Voltar</router-link></p>
 
@@ -18,6 +18,11 @@
             </div>
 
             <div class="form-group">
+                <label name="cavalete_imei">IMEI</label>
+                <input type="text" class="form-control" v-model="cavalete.imei" id="cavalete_imei" required>
+            </div>
+
+            <div class="form-group">
                 <label name="cavalete_type">Tipo</label>
                 <select class="form-control" v-model="cavalete.type" id="cavalete_type" required> <!--Supplement an id here instead of using 'name'-->
                     <option value="L - Inloader">L - Inloader</option>
@@ -26,7 +31,7 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-primary">Create</button>
+                <button class="btn btn-primary">Adicionar</button>
             </div>
         </form>
     </div>
@@ -67,12 +72,12 @@
                 }).then((response) => {
                     this.notifications.push({
                         type: 'success',
-                        message: 'Cavalete created successfully'
+                        message: 'Cavalete adicionado com sucesso'
                     });
                 }, (response) => {
                     this.notifications.push({
                         type: 'error',
-                        message: 'Cavalete not created'
+                        message: 'Cavalete não adicionado'
                     });
                 });
             }

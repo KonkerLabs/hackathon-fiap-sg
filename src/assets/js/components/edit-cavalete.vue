@@ -18,6 +18,11 @@
             </div>
 
             <div class="form-group">
+                <label name="cavalete_imei">IMEI</label>
+                <input type="text" class="form-control" v-model="cavalete.imei" id="cavalete_imei" required>
+            </div>
+
+            <div class="form-group">
                 <label name="cavalete_type">Tipo</label>
                 <select class="form-control" v-model="cavalete.type" id="cavalete_type" required> <!--Supplement an id here instead of using 'name'-->
                     <option value="L - Inloader">L - Inloader</option>
@@ -78,12 +83,12 @@
                 }).then((response) => {
                     this.notifications.push({
                         type: 'success',
-                        message: 'Cavalete updated successfully'
+                        message: 'Cavalete atualizado com sucesso'
                     });
                 }, (response) => {
                     this.notifications.push({
                         type: 'error',
-                        message: 'Cavalete not updated'
+                        message: 'Cavalete não atualizado'
                     });
                 });
             }

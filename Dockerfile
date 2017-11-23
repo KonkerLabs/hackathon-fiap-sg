@@ -155,6 +155,7 @@ COPY server.js /tmp
 COPY webpack.config.js /tmp
 COPY index.html /tmp
 COPY src /tmp/src
+COPY src/assets/js/components/config.js.prod /tmp/src/assets/js/components/config.js
 
 RUN cp /tmp/docker-entrypoint.sh /etc/init.d/webapp && \
     chmod a+x /etc/init.d/webapp && \

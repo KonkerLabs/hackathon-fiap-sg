@@ -49,7 +49,7 @@
                 }, (response) => {
                     this.notifications.push({
                         type: 'danger',
-                        message: 'Cavalete could not deleted'
+                        message: 'Cavalete não foi removido'
                     });
                 });
             }

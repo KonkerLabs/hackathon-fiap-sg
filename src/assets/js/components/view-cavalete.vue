@@ -16,6 +16,11 @@
                 <label name="cavalete_name">Nome</label>
                 <input type="text" class="form-control" disabled v-model="cavalete.name" id="cavalete_name" required>
             </div>
+
+            <div class="form-group">
+                <label name="cavalete_imei">IMEI</label>
+                <input type="text" class="form-control" disabled v-model="cavalete.imei" id="cavalete_imei" required>
+            </div>
         </form>
 
         <table class="table table-hover">

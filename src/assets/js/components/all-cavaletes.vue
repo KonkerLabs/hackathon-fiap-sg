@@ -1,6 +1,9 @@
 <template>
     <div id="all-cavaletes">
-        <h1>Cebrace Cavaletes</h1>
+        <div class="row">
+            <div class="col-lg-6"><h1>Controle de Cavaletes</h1></div>
+            <div class="col-lg-6 text-right"><img src="/src/assets/images/logo-cebrace.png" width="250px" /></div>
+        </div>
 
         <p><router-link :to="{ name: 'create_cavalete' }" class="btn btn-primary">Adicionar Cavalete</router-link></p>
 

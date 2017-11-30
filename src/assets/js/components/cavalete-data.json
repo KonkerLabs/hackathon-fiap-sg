@@ -4,5 +4,35 @@
         "name": "00001",
         "imei": "868683024786554",
         "type": "L - Inloader"
+    },
+    {
+        "id": 2,
+        "name": "00002",
+        "imei": "868683024786555",
+        "type": "L - Inloader"
+    },
+    {
+        "id": 3,
+        "name": "00003",
+        "imei": "868683024786556",
+        "type": "L - Inloader"
+    },
+    {
+        "id": 4,
+        "name": "00004",
+        "imei": "868683024786557",
+        "type": "A - Caminhões"
+    },
+    {
+        "id": 5,
+        "name": "00005",
+        "imei": "868683024786558",
+        "type": "A - Caminhões"
+    },
+    {
+      "id": 6,
+      "name": "00006",
+      "imei": "868683024786559",
+      "type": "L - Inloader"
     }
 ]
